@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Timer</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+<div class="row">
+    <div id="timer-container" class="col-md-6 col-md-offset-3" style="margin-top:3%">
+
+        <div class="row">
+            <div class="col-xs-6">
+                <h2>Work Time</h2>
+                <button id="work-minus-btn" class="btn btn-default  btn-sm glyphicon glyphicon-minus" type="submit"></button>
+                <span id="pomodoro-count">25</span>
+                <button id="work-plus-btn" class=" btn btn-default  btn-sm glyphicon glyphicon-plus" type="submit"></button>
+
+            </div>
+            <div id="break-control"class="col-xs-6">
+                <h2>Break Time</h2>
+                <button id="break-minus-btn" class=" btn btn-default  btn-sm glyphicon glyphicon-minus" type="submit"></button>
+                <span id="break-timer">5</span>
+                <button id="break-plus-btn" class=" btn btn-default  btn-sm glyphicon glyphicon-plus" type="submit"></button>
+            </div>
+        </div>
+        <div id="timer-circle">
+            <div id="timer">
+                <span id="minutes">25</span>:<span>00</span>
+            </div>
+        </div>
+        <h2 class="text-center" id="timer-status"></h2>
+        <div id="button-wrapper" class="row top-row text-primary bottom">
+
+            <button type="button" class="btn btn-default start-pomodoro">Start</button>
+            <button type="button" class="btn btn-default stop-pomodoro">Stop/Reset</button>
+
+        </div>
+    </div>
+
+</div>
+<script   src="https://code.jquery.com/jquery-3.1.0.js"     crossorigin="anonymous"></script>
+<script src="Javavscript/app.js"></script>
+</body>
+</html>
